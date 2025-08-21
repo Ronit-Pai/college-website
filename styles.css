@@ -197,16 +197,22 @@ main {
     background-color: #f5f5f5;
     border-radius: 5px;
     font-family: 'Oswald', sans-serif;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+.resource-item:hover {
+    transform: translateY(-3px); 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.15); 
 }
 
 .resource-item a {
     text-decoration: none;
-    color: #0056b3;
+    color: black;
     font-weight: bold;
 }
 
 .resource-item a:hover {
     text-decoration: underline;
+    color: #ff9900;
 }
 .official-site-link {
     margin-top: 20px;
