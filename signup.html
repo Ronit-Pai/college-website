@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sign Up Page</title>
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Federant&display=swap" rel="stylesheet">
+  <style>
+    body, h1, h2, p, ul, li {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      background-color: #f9f9f9;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      text-align: center;
+      padding: 1rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .header-content {
+      font-family: "Oswald", sans-serif;
+      font-weight: 300;
+    }
+
+    main {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 80vh;
+      padding: 20px;
+    }
+
+    .signup-box {
+      background-color: #fff;
+      padding: 40px 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+      width: 100%;
+      max-width: 450px;
+      font-family: 'Oswald', sans-serif;
+    }
+
+    .signup-box h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #333;
+    }
+
+    .signup-box label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      color: #444;
+    }
+
+    .signup-box input[type="text"],
+    .signup-box input[type="password"],
+    .signup-box input[type="tel"],
+    .signup-box textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 20px;
+      border: 1px solid #ddd;
+      border-radius: 6px;
+      font-size: 14px;
+      resize: none;
+    }
+
+    .signup-box button {
+      width: 100%;
+      padding: 12px;
+      border: none;
+      border-radius: 6px;
+      background-color: #333;
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.2s;
+    }
+
+    .signup-box button:hover {
+      background-color: #ff9900;
+      transform: translateY(-2px);
+    }
+
+    footer {
+      text-align: center;
+      padding: 1rem 0;
+      background-color: #444;
+      color: #fff;
+      transition: color 0.3s;
+    }
+
+    footer:hover {
+      color: #ff9900;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="header-content">
+      <h1>Sign Up</h1>
+    </div>
+  </header>
+
+  <main>
+    <div class="signup-box">
+      <h2>Create Account</h2>
+      <form>
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Choose a username" required>
+
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your full name" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Create a password" required>
+
+        <label for="address">Address</label>
+        <textarea id="address" name="address" rows="3" placeholder="Enter your address" required></textarea>
+
+        <label for="mobile">Mobile Number</label>
+        <input type="tel" id="mobile" name="mobile" placeholder="Enter your mobile number" required pattern="[0-9]{10}">
+
+        <button type="submit">Sign Up</button>
+      </form>
+    </div>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Your Website | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
